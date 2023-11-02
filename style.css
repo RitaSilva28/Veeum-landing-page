@@ -1,0 +1,129 @@
+/* Write some CSS below */
+body {
+  font-family: 'Source Sans 3', sans-serif;
+    color: #FFFDFA;
+    background-color: #343434;
+    font-size: 18px;
+    margin:0;
+   
+  }
+  
+ 
+  a {
+    color: #1A48E3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  a:hover {
+    color: #CE2FAE;
+  }
+
+
+  .banner{
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgb(0, 0, 0)
+  ), url("images/background/Big-Sky-Motorcycle-Rides-in-Montana.png");
+   background-size:cover;
+   padding:150px 0px;
+   background-position: center;
+   text-align: center;
+  
+   
+   
+  }
+
+  .banner h1{
+    font-family: 'Bungee', sans-serif;
+    font-size: 60px;
+    margin:20px 0;
+  }
+
+  .banner p{
+    margin:20px 0px;
+    font-style: italic;
+  }
+
+
+  .button-orange{
+    background-color: #FF8E5F;
+    color: #FFFDFA;
+    padding: 16px 48px;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  .button-orange:hover {
+    background-color: #fffdfa;
+    color:#FF8E5F;
+  }
+
+  .container{
+    width:100%;
+    margin:auto;
+    text-align: center;
+  }
+ 
+  .cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+
+    }
+
+  .card-white {
+    background: rgba(255, 253, 250, 0.101);
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: 350px;
+    padding: 24px;
+    margin: 8px;
+    justify-self: center;
+    text-align: center;
+
+  }
+  
+  .card-white img {
+    width: 328px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 4px;
+  }
+
+  .card-white p {
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .card-white h4{
+    margin:0;
+  }
+
+
+  .footer {
+    background: rgba(255, 253, 250,0.05);
+    text-align: center;
+    padding: 24px 0;
+  }
+  
+  .footer p {
+    color: #fffdfa;
+  }
+
+
+
+  @media (max-width: 1266px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .card-white {
+      width: auto;
+    }
+  }
